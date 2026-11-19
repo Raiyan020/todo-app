@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 16px;
+  background: #f1f5f9;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #0f172a;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 1.6rem;
+}
+
+#task-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+#task-input:focus {
+  border-color: #3b82f6;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#task-form button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#task-form button:hover {
+  background: #2563eb;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 4px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+li span {
+  flex: 1;
+  word-break: break-word;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.delete-btn {
+  border: none;
+  background: transparent;
+  color: #ef4444;
+  font-size: 1.2rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+}
+
+#empty-message {
+  text-align: center;
+  color: #94a3b8;
+  margin: 16px 0 0;
+}
